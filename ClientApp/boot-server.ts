@@ -6,6 +6,10 @@ import { enableProdMode } from '@angular/core';
 import { platformNodeDynamic } from 'angular2-universal';
 import { AppModule } from './app/app.module';
 
+
+var window = 'global';
+global['window']= window;
+
 enableProdMode();
 const platform = platformNodeDynamic();
 

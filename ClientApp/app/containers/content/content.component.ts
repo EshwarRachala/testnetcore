@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+declare let d3: any;
 
 @Component({
     selector: 'app-content',
@@ -6,5 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContentComponent implements OnInit {
     ngOnInit(): void {
+        // debugger;
+        // d3.select('body');
     }
 }

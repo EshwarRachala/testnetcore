@@ -49,9 +49,7 @@ module.exports = (env) => {
         plugins: [
             new webpack.ProvidePlugin({
                 $: 'jquery',
-                jQuery: 'jquery',
-                d3: 'd3',
-                D3: 'd3'
+                jQuery: 'jquery'
             }),
             new webpack.ContextReplacementPlugin(/\@angular\b.*\b(bundles|linker)/, path.join(__dirname, './ClientApp')), // Workaround for https://github.com/angular/angular/issues/11580
             new webpack.IgnorePlugin(/^vertx$/) // Workaround for https://github.com/stefanpenner/es6-promise/issues/100

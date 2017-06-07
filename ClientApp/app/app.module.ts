@@ -1,19 +1,15 @@
-import { ContentComponent } from './containers/content/content.component';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { UniversalModule } from 'angular2-universal';
-import { AppComponent } from './containers/app/app.component';
-import { NavigationComponent } from './containers/navigation/navigation.component';
+import { AppComponent } from './app.component'; 
 
 @NgModule({
     bootstrap: [AppComponent],
     declarations: [
-        AppComponent,
-        NavigationComponent,
-        ContentComponent
+        AppComponent
     ],
     imports: [
-        UniversalModule,
+        UniversalModule
     ]
 })
 export class AppModule {
